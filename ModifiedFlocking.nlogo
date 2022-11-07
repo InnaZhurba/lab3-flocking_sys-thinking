@@ -270,6 +270,8 @@ to go
     ;; the following line is used to make the turtles
     ;; animate more smoothly.
     repeat 5 [ ask turtles [ fd 0.2 ] display ]
+
+  ;; plot as x number-of-birds-killed and y time-to-kill
     ;; for greater efficiency, at the expense of smooth
     ;; animation, substitute the following line instead:
     ;;   ask turtles [ fd 1 ]
@@ -350,7 +352,7 @@ population
 population
 1.0
 1000.0
-745.0
+928.0
 1.0
 1
 NIL
@@ -365,7 +367,7 @@ max-align-turn
 max-align-turn
 0.0
 20.0
-3.0
+1.25
 0.25
 1
 degrees
@@ -380,7 +382,7 @@ max-cohere-turn
 max-cohere-turn
 0.0
 20.0
-3.0
+2.0
 0.25
 1
 degrees
@@ -395,7 +397,7 @@ max-separate-turn
 max-separate-turn
 0.0
 20.0
-1.5
+20.0
 0.25
 1
 degrees
@@ -425,7 +427,7 @@ minimum-separation
 minimum-separation
 0.0
 5.0
-1.0
+0.25
 0.25
 1
 patches
@@ -440,7 +442,7 @@ predators
 predators
 0
 300
-10.0
+2.0
 1
 1
 NIL
@@ -481,6 +483,24 @@ false
 "" ""
 PENS
 "default" 1.0 2 -16777216 true "" "plot global-polarization"
+
+PLOT
+30
+340
+230
+490
+number-of-birds-killed
+NIL
+NIL
+0.0
+1.0
+0.0
+1.0
+true
+false
+"" ""
+PENS
+"default" 1.0 2 -16777216 true "" "plotxy ticks number-of-birds-killed"
 
 @#$#@#$#@
 ## WHAT IS IT?
